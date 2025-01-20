@@ -1,0 +1,111 @@
+@media(max-width: 560px) {
+    .banner-content h1 {
+        font-size: 30px;
+    }
+
+    .banner-maindesign {
+        height: 530px;
+    }
+
+    .banner-content {
+        padding: 100px 0 100px 0;
+    }
+
+    .centerhead,
+    .left-side-head h2 {
+        font-size: 30px;
+    }
+
+    .right-side-para {
+        margin-top: 20px;
+    }
+
+    .ctadesign {
+        padding: 60px 20px;
+    }
+
+    .ctacontent {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .bottom-footer-copy-right {
+        flex-wrap: wrap;
+    }
+
+    .privacy-link ul {
+        gap: 5px;
+    }
+
+    .privacy-link ul li a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .startdiv {
+        justify-content: start;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .side-logo {
+        display: flex;
+        width: 100%;
+        padding: 5px 0px;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .nav-list a {
+        padding: 0px;
+    }
+
+
+    .side-logo-section {
+        position: static !important;
+        width: 100%;
+    }
+
+    .side-logo img {
+        width: 53px;
+        height: auto;
+        object-fit: contain;
+        position: static;
+        margin-right: 20px;
+    }
+
+    .wrapper .btn {
+        display: block !important;
+    }
+}
+
+
+
+@media(min-width: 1400px) {
+    .nav-list a {
+        padding: 0.9rem 1.5rem;
+    }
+}
+
+@media (min-width:1200),
+(max-width: 1399px) {
+    .nav-list a {
+        padding: 0.9rem 14px;
+    }
+}
+
+
+
+
+@media (min-width:992),
+(max-width: 1199px) {
+    .nav-list a {
+        padding: 0.9rem 9px;
+    }
+
+
+}
