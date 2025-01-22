@@ -120,6 +120,13 @@ nav {
   color: var(--black);
 }
 
+.nav-list .drop-menu1 :hover,
+.nav-list .drop-menu3 :hover,
+.nav-list .drop-menu2 :hover {
+  background-color: var(--nikom-skyblue);
+  color: white;
+}
+
 /* =========== Drop Down ============ */
 .nav-list .drop-menu1,
 .nav-list .drop-menu3,
@@ -135,20 +142,27 @@ nav {
   transition: all 300ms ease;
 }
 
+/* 
+.nav-list .drop-menu1 li a:hover,
+.nav-list .drop-menu3 li a:hover,
+.nav-list .drop-menu2 li a:hover {
+  background-color: var(--nikom-skyblue);
+  color: white !important;
+
+} */
+
 .nav-list .drop-menu1 li a,
 .nav-list .drop-menu3 li a,
 .nav-list .drop-menu2 li a {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
-  padding: 0 0 0 1rem;
+  padding: 5px 20px;
   border-radius: 0;
   color: var(--black);
 }
 
-.nav-list .drop-menu1 li a:hover {
-  color: var(--black);
-}
+
 
 .nav-list li:hover .drop-menu1,
 .nav-list li:hover .drop-menu3,
@@ -312,6 +326,7 @@ nav {
   #showdrop3:checked~.drop-menu3,
   #showMega:checked~.mega-box {
     max-height: 100%;
+    margin-top: 1.5rem;
   }
 
   .nav-list .drop-menu1 li,
@@ -325,7 +340,7 @@ nav {
   .nav-list .drop-menu2 li a {
     color: var(--black);
     font-size: 18px;
-    margin: 10px
+    padding: 2px 19px !important;
   }
 
   .nav-list .desktop-item {
