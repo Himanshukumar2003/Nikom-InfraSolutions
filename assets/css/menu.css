@@ -56,8 +56,13 @@ li {
 
 .top {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  margin-top: 20px;
 
+}
+
+.top img {
+  width: 200px;
 }
 
 .d-flex {
