@@ -1684,3 +1684,8 @@ footer {
 .project-body a:hover .icon {
   transform: translateX(10px);
 }
+
+
+.community-card-body .theme-btn1 {
+  padding: 8px 30px !important;
+}
