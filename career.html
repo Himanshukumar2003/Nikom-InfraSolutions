@@ -13,7 +13,22 @@
   <link rel="stylesheet" href="assets/css/menu.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
+
+
+<style>
+  .modal-dialog {
+    min-width: 800px;
+  }
+
+
+  @media(max-width: 991px) {
+    .modal-dialog {
+      min-width: auto !important;
+    }
+  }
+</style>
 
 <body>
   <div class="main-wrapper">
@@ -143,20 +158,119 @@
       </div>
     </div>
   </div>
-  <section class="ptb">
+
+
+  <section class="ptb events">
     <div class="container">
-      <div class="row d-flex justify-content-center align-items-center w-100">
-        <div class="col-md-8">
-          <form action="action.php" method="post">
+      <h2 class="centerhead text-center">Current Openings</h2>
+      <div class="row g-md-4 g-5 mt-5">
+
+        <div class="col-md-6">
+          <div class="community-card-body">
+            <div class="img-section">
+              <img src="assets/img/projects-icon/civil-interior-work.png">
+            </div>
+            <div class="community-card">
+              <h5>Business Development Community at TATA AIG (Fresher)</h5>
+              <p><span class="badge tag">All India</span></p>
+              <p><strong>Role:</strong> Accounts</p>
+              <p><strong>Salary:</strong> Upto 4 LPA</p>
+              <a class="theme-btn1 btn-two" data-job-title="Accounts" data-bs-toggle="modal" data-bs-target="#job">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="col-md-6">
+          <div class="community-card-body">
+            <div class="img-section">
+              <img src="assets/img/projects-icon/civil-interior-work.png">
+            </div>
+            <div class="community-card">
+              <h5>Operations & Services Executive</h5>
+              <p><span class="badge tag">Mumbai</span></p>
+              <p><strong>Role:</strong> Operations & Services</p>
+              <p><strong>Salary:</strong> 6.0 LPA</p>
+              <a class="theme-btn1 btn-two" data-job-title="Operations & Services" data-bs-toggle="modal"
+                data-bs-target="#job">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="community-card-body">
+            <div class="img-section">
+              <img src="assets/img/projects-icon/civil-interior-work.png">
+            </div>
+            <div class="community-card">
+              <h5>Optimized Workspaces with Comprehensive FMS </h5>
+              <p><span class="badge tag">Bangalore</span></p>
+              <p><strong>Role:</strong> FMS </p>
+              <p><strong>Salary:</strong> 5.5 LPA</p>
+              <a class="theme-btn1 btn-two" data-job-title="FMS" data-bs-toggle="modal" data-bs-target="#job">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="community-card-body">
+            <div class="img-section">
+              <img src="assets/img/projects-icon/civil-interior-work.png">
+            </div>
+            <div class="community-card">
+              <h5>Project Coordinator</h5>
+              <p><span class="badge tag">Pune</span></p>
+              <p><strong>Role:</strong> Projects</p>
+              <p><strong>Salary:</strong> 4.5 LPA</p>
+              <a class="theme-btn1 btn-two" data-job-title="Projects" data-bs-toggle="modal" data-bs-target="#job">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="modal fade" id="job" tabindex="-1" aria-labelledby="jobLabel" aria-hidden="true" data-bs-backdrop="static"
+    data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <form action="action.php" method="post" onsubmit="return validateForm()">
+          <div class="modal-body">
             <div class="career-form">
-              <h3 class="">Apply Online</h3>
+              <div class="d-flex justify-content-between">
+                <h3 class="">Apply Online</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg"
+                  viewBox="0 0 16 16" data-bs-dismiss="modal">
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+
+              </div>
               <div class="line"></div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-floating mb-3">
+
                     <select class="form-select" name="position" id="floatingSelect"
                       aria-label="Floating label select example">
-                      <option selected disbaled value="" hidden>Select Option ---</option>
+                      <option selected disabled value="" hidden>Select Option ---</option>
                       <option value="Sales & Marketing">Sales & Marketing</option>
                       <option value="Accounts">Accounts</option>
                       <option value="Legal">Legal</option>
@@ -165,12 +279,9 @@
                       <option value="HR">HR</option>
                       <option value="Admin">Admin</option>
                       <option value="FMS">FMS</option>
-
-
-
-
                       <option value="Operations & Services">Operations & Services</option>
                     </select>
+
                     <label for="floatingSelect">Position Applied</label>
                   </div>
                 </div>
@@ -206,7 +317,7 @@
                   <div class="form-floating mb-3">
                     <select class="form-select" name="country" id="floatingSelect"
                       aria-label="Floating label select example">
-                      <option selected disbaled value="" hidden>Select Option ---</option>
+                      <option selected="" disbaled="" value="" hidden="">Select Option ---</option>
                       <option value="India">India</option>
                       <option value="Abkhazia">Abkhazia</option>
                       <option value="Afghanistan">Afghanistan</option>
@@ -391,7 +502,7 @@
                   <div class="form-floating mb-3">
                     <select class="form-select" name="experience" id="floatingSelect"
                       aria-label="Floating label select example">
-                      <option selected disbaled value="" hidden>Select Option ---</option>
+                      <option selected="" disbaled="" value="" hidden="">Select Option ---</option>
                       <option value="6 Months">6 Months</option>
                       <option value="1 Year+">1 Year+</option>
                       <option value="2 Years+">2 Years+</option>
@@ -419,14 +530,20 @@
                 </div>
               </div>
               <div class="d-flex justify-content-center align-items-center w-100">
-                <button type="submit" name="submit" name="apply" class="theme-btn1 border-0">Submit</button>
+                <button type="submit" name="submit" class="theme-btn1 border-0">Submit</button>
+
               </div>
             </div>
-          </form>
-        </div>
+          </div>
+
+        </form>
       </div>
     </div>
+  </div>
+
   </section>
+
+
   <footer class="relative">
     <div class="footer-obj">
       <img src="assets/img/footer-obj.png" alt="">
@@ -707,6 +824,27 @@
     document.getElementById('dobInput').addEventListener('focus', function (e) {
       this.showPicker();
     });
+
+    document.querySelectorAll('.btn-two').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const jobTitle = this.getAttribute('data-job-title'); // Get job title
+        const selectElement = document.getElementById('floatingSelect');
+
+        // Loop through the options to find and set the matching value
+        let isMatchFound = false;
+        selectElement.querySelectorAll('option').forEach(function (option) {
+          if (option.value === jobTitle) {
+            selectElement.value = jobTitle; // Set the matching value
+            isMatchFound = true;
+          }
+        });
+
+        if (!isMatchFound) {
+          alert('Job role not found in the dropdown options!');
+        }
+      });
+    });
+
   </script>
 </body>
 
