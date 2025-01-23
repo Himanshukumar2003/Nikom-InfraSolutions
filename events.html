@@ -714,11 +714,19 @@
     <!-- Initialize Swiper -->
     <script>
         // First Swiper setup
+        // Swiper 1
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 10,
-            slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2, // Show 2 thumbnails on small screens
+                },
+                768: {
+                    slidesPerView: 4, // Show 4 thumbnails on larger screens
+                },
+            },
         });
         var swiper2 = new Swiper(".mySwiper2", {
             spaceBetween: 10,
@@ -731,12 +739,19 @@
             },
         });
 
-        // Second Swiper setup
+        // Swiper 2
         var swiper3 = new Swiper(".mySwiper4", {
             spaceBetween: 10,
-            slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+            },
         });
         var swiper4 = new Swiper(".mySwiper3", {
             spaceBetween: 10,
@@ -745,18 +760,24 @@
                 prevEl: ".swiper-button-prev",
             },
             thumbs: {
-                swiper: swiper3, // Fix: Correctly linking to the thumbnail swiper instance
+                swiper: swiper3,
             },
         });
 
-        // 3
+        // Swiper 3
         var swiper5 = new Swiper(".mySwiper5", {
             spaceBetween: 10,
-            slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+            },
         });
-
         var swiper6 = new Swiper(".mySwiper6", {
             spaceBetween: 10,
             navigation: {
@@ -764,21 +785,24 @@
                 prevEl: ".swiper-button-prev",
             },
             thumbs: {
-                swiper: swiper5, // Link to thumbnail swiper
+                swiper: swiper5,
             },
         });
 
-
-        // 4
-
-
+        // Swiper 4
         var swiper7 = new Swiper(".mySwiper7", {
             spaceBetween: 10,
-            slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+            },
         });
-
         var swiper8 = new Swiper(".mySwiper8", {
             spaceBetween: 10,
             navigation: {
@@ -786,10 +810,9 @@
                 prevEl: ".swiper-button-prev",
             },
             thumbs: {
-                swiper: swiper7, // Link to thumbnail swiper
+                swiper: swiper7,
             },
         });
-
 
     </script>
 

@@ -1684,17 +1684,3 @@ footer {
 .project-body a:hover .icon {
   transform: translateX(10px);
 }
-
-
-/* Add a border for the active thumbnail */
-.swiper-slide-thumb-active img {
-  border: 4px solid var(--nikom-skyblue);
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-
-.mySwiper,
-.mySwiper4 {
-  margin-top: 20px;
-}
